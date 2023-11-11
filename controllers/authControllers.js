@@ -7,7 +7,7 @@ import JWT from "jsonwebtoken";
 
 export const registerController = async (req, res) => {
     try {
-        const { name, email, password, phone, adress } = req.body
+        const { name, email, password, phone, address } = req.body
         //validations
         if (!name) {
             return res.send({ error: 'Nombre es requerido' })
@@ -23,7 +23,7 @@ export const registerController = async (req, res) => {
         if (!phone) {
             return res.send({ error: 'telefono es requerido' })
         }
-        if (!adress) {
+        if (!address) {
             return res.send({ error: 'dirección es requerida' })
         }
 
@@ -44,7 +44,7 @@ export const registerController = async (req, res) => {
             name,
             email,
             phone,
-            adress,
+            address,
             password: hashedPassword,
         }).save();
 
@@ -59,10 +59,10 @@ export const registerController = async (req, res) => {
         console.log(error)
         res.status(500).send({
             success: false,
-            mesasge: 'Error en el Registro'.
+            message: 'Error en el Registro'.
                 error
 
-        })
+        });
     }
 };
 
@@ -112,8 +112,14 @@ export const loginController = async (req, res) => {
         res.status(500).send({
             success: false,
             message: 'Error en login',
-            error
+            error,
         })
 
     }
 };
+
+//test controller
+
+export const testController = (req, res) => {
+    res.send('Protected Routes');
+}
