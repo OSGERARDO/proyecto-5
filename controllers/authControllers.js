@@ -10,21 +10,21 @@ export const registerController = async (req, res) => {
         const { name, email, password, phone, address } = req.body
         //validations
         if (!name) {
-            return res.send({ error: 'Nombre es requerido' })
+            return res.send({ message: 'Nombre es requerido' })
         }
         if (!email) {
-            return res.send({ error: 'Email es requerido' })
+            return res.send({ message: 'Email es requerido' })
         }
 
         if (!password) {
-            return res.send({ error: 'Password es requerido' })
+            return res.send({ message: 'Password es requerido' })
         }
 
         if (!phone) {
-            return res.send({ error: 'telefono es requerido' })
+            return res.send({ message: 'telefono es requerido' })
         }
         if (!address) {
-            return res.send({ error: 'dirección es requerida' })
+            return res.send({ message: 'dirección es requerida' })
         }
 
         //check user 
@@ -59,8 +59,8 @@ export const registerController = async (req, res) => {
         console.log(error)
         res.status(500).send({
             success: false,
-            message: 'Error en el Registro'.
-                error
+            message: 'Error en el Registro',
+            error
 
         });
     }
