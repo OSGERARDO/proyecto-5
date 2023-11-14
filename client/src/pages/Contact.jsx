@@ -15,8 +15,9 @@ const Contact = () => {
         <div className="col-md-4">
           <h1 className="bg-dark p-2 text-white text-center">CONTACTANOS</h1>
           <p className="text-justify mt-2">
-            any query and info about prodduct feel free to call anytime we 24X7
-            vaialible
+            cualquier consulta e información sobre el producto no dude en
+            llamarnos en cualquier momento las 24 horas, los 7 días de la semana
+            disponible
           </p>
           <p className="mt-3">
             <BiMailSend /> : www.help@ventadegarage.com
@@ -25,7 +26,7 @@ const Contact = () => {
             <BiPhoneCall /> : 012-3456789
           </p>
           <p className="mt-3">
-            <BiSupport /> : 1800-0000-0000 (toll free)
+            <BiSupport /> : 1800-0000-0000
           </p>
         </div>
       </div>

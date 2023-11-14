@@ -31,8 +31,9 @@ export const registerController = async (req, res) => {
         const existingUser = await userModel.findOne({ email })
         //existing user 
         if (existingUser) {
-            return res.status(200).send({
-                success: true,
+            return
+            res.status(200).send({
+                success: false,
                 message: 'ya registrado por favor inicie sesión',
             })
 
@@ -50,7 +51,7 @@ export const registerController = async (req, res) => {
 
         res.status(201).send({
             success: true,
-            message: 'Usuario Registrado con exito',
+            message: '¡Usuario Registrado con exito!',
             user,
         })
 
@@ -98,6 +99,7 @@ export const loginController = async (req, res) => {
             success: true,
             message: 'login exitoso',
             user: {
+                _id: user._id,
                 name: user.name,
                 email: user.email,
                 phone: user.phone,
