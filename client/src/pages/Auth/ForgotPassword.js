@@ -1,37 +1,35 @@
 import React, { useState } from "react";
 import Layout from "./../../components/Layout/Layout";
 import axios from "axios";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import { useAuth } from "../../context/auth";
 
 
 
-const Login = () => {
+const ForgotPassword = () => {
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [auth, setAuth] = useAuth()
+    const [newPassword, setNewPassword] = useState("");
+    const [answer, setAnswer] = useState("");
+
 
     const navigate = useNavigate();
-    const location = useLocation();
+
 
     // form function
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("/api/v1/auth/login", {
+            const res = await axios.post("/api/v1/auth/forgot-password", {
                 email,
-                password,
+                newPassword,
+                answer
+
             });
             if (res && res.data.success) {
                 toast.success(res.data && res.data.message);
-                setAuth({
-                    ...auth,
-                    user: res.data.user,
-                    token: res.data.token,
-                });
-                localStorage.setItem('auth', JSON.stringify(res.data));
-                navigate(location.state || "/");
+
+
+                navigate("/login");
             } else {
                 toast.error(res.data.message);
             }
@@ -41,10 +39,10 @@ const Login = () => {
         }
     };
     return (
-        <Layout title="Register - Ecommer App">
+        <Layout title={'Forgot Password - Ecommerce'}>
             <div className="form-container ">
                 <form onSubmit={handleSubmit}>
-                    <h4 className="title">Iniciar sesión</h4>
+                    <h4 className="title">Restablecer la contraseña</h4>
 
                     <div className="mb-3">
                         <input
@@ -59,34 +57,36 @@ const Login = () => {
                     </div>
                     <div className="mb-3">
                         <input
+                            type="text"
+                            value={answer}
+                            onChange={(e) => setAnswer(e.target.value)}
+                            className="form-control"
+                            id="exampleInputEmail1"
+                            placeholder="ingresa tu respuesta secreta (nombre de tu mejor amig@)"
+                            required
+                        />
+                    </div>
+                    <div className="mb-3">
+                        <input
                             type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
+                            value={newPassword}
+                            onChange={(e) => setNewPassword(e.target.value)}
                             className="form-control"
                             id="exampleInputPassword1"
                             placeholder="Ingresa tu Contraseña"
                             required
                         />
                     </div>
-                    <div className="mb-3">
-                        <button
-                            type="button"
-                            className="btn btn-primary"
-                            onClick={() => {
-                                navigate("/forgot-password");
-                            }}
-                        >
-                            ¿Has olvidado tu contraseña?
-                        </button>
-                    </div>
+
 
                     <button type="submit" className="btn btn-primary">
-                        Acceder
+                        Restablecer
                     </button>
                 </form>
             </div>
         </Layout>
-    );
-};
 
-export default Login;
+    )
+}
+
+export default ForgotPassword

@@ -10,6 +10,8 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
+  const [answer, setAnswer] = useState("");
+
   const navigate = useNavigate();
 
   //form function
@@ -22,6 +24,7 @@ const Register = () => {
         password,
         phone,
         address,
+        answer,
       });
       if (res && res.data.success) {
         toast.success(res.data && res.data.message);
@@ -95,6 +98,25 @@ const Register = () => {
               placeholder="Ingresa tu Dirección"
             />
           </div>
+          <div className="mb-3">
+            <input
+              type="text"
+              value={answer}
+              onChange={(e) => setAnswer(e.target.value)}
+              className="form-control"
+              id="exampleInputAddress1"
+              placeholder="nombre de tu mejor amigo"
+            />
+          </div>
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => {
+              navigate("/forgot-password");
+            }}
+          >
+            Recuperar contraseña
+          </button>
           <button type="submit" className="btn btn-primary">
             Registrarse
           </button>
