@@ -6,7 +6,8 @@ import Policy from './pages/Policy';
 import Pagenotfound from './pages/Pagenotfound';
 import Register from './pages/Auth/Register';
 import Login from './pages/Auth/Login';
-
+import Dashboard from './pages/user/Dashboard';
+import PrivateRoute from './components/Routes/Private';
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/policy' element={<Policy />} />
         <Route path='/*' element={<Pagenotfound />} />
+
+        {/* Coloca PrivateRoute dentro de la ruta /dashboard */}
+        <Route path='/dashboard/*' element={<PrivateRoute />}>
+          <Route index element={<Dashboard />} />
+        </Route>
       </Routes>
     </>
   );
