@@ -70,7 +70,7 @@ export const categoryController = async (req, res) => {
     try {
         const category = await categoryModel.find({})
         res.status(200).send({
-            succes: true,
+            success: true,
             message: 'lista de todas las categorías',
             category,
         });
