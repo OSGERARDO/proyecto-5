@@ -23,6 +23,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Categories from "./pages/Categories";
 import CategoryProduct from "./pages/CategoryProduct";
 import CartPage from "./pages/CartPage";
+import AdminOrders from './pages/Admin/AdminOrders.js';
 
 function App() {
   return (
@@ -46,7 +47,7 @@ function App() {
           <Route path="admin/product/:slug" element={<UpdateProduct />} />
           <Route path="admin/products" element={<Products />} />
           <Route path="admin/users" element={<Users />} />
-
+          <Route path="admin/orders" element={<AdminOrders />} />
         </Route>
         <Route path='/register' element={<Register />} />
         <Route path='/forgot-password' element={<ForgotPassword />} />
@@ -55,12 +56,6 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/policy' element={<Policy />} />
         <Route path='/*' element={<Pagenotfound />} />
-
-        {/* Coloca PrivateRoute dentro de la ruta /
-        dashboard 
-         <Route path='/dashboard/*' element={<PrivateRoute />}>
-          <Route index element={<Dashboard />} /></Route>
-*/}
 
       </Routes >
     </>

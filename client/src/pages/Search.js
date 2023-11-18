@@ -1,10 +1,16 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
 import { useSearch } from "../context/search";
+import { useNavigate } from "react-router-dom";
+import { useCart } from "../context/cart";
+import toast from "react-hot-toast";
+
 const Search = () => {
     const [values, setValues] = useSearch();
+    const navigate = useNavigate();
+    const [cart, setCart] = useCart();
     return (
-        <Layout title={"Search results"}>
+        <Layout title={"Buscar Resultados - venta de garage"}>
             <div className="container">
                 <div className="text-center">
                     <h1>Resultados de busqueda</h1>
@@ -27,8 +33,27 @@ const Search = () => {
                                         {p.description.substring(0, 30)}...
                                     </p>
                                     <p className="card-text"> $ {p.price}</p>
-                                    <button class="btn btn-primary ms-1">Mas detalles</button>
-                                    <button class="btn btn-secondary ms-1">Agregar al carrito</button>
+                                    <button
+                                        className="btn btn-primary ms-2 my-2"
+                                        onClick={() => navigate(`/product/${p.slug}`)}
+                                    >
+                                        Mas Detalles
+                                    </button>
+                                    <button
+                                        className="btn btn-secondary ms-2 my-2"
+                                        onClick={() => {
+                                            setCart([...cart, p]);
+                                            localStorage.setItem(
+                                                "cart",
+                                                JSON.stringify([...cart, p])
+                                            );
+                                            toast.success(
+                                                "¡Wow! Que buena elección, ¡tu producto se agrego al carrito!"
+                                            );
+                                        }}
+                                    >
+                                        Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         ))}

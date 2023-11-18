@@ -42,9 +42,9 @@ const Login = () => {
     };
     return (
         <Layout title="Register - Ecommer App">
-            <div className="form-container ">
+            <div className="card p-4 mt-4" style={{ maxWidth: '400px', margin: 'auto', backgroundColor: '#f8f9fa', border: '1px solid #ced4da' }}>
                 <form onSubmit={handleSubmit}>
-                    <h4 className="title">Iniciar sesión</h4>
+                    <h4 className="title mb-4">Iniciar sesión</h4>
 
                     <div className="mb-3">
                         <input
@@ -53,7 +53,7 @@ const Login = () => {
                             onChange={(e) => setEmail(e.target.value)}
                             className="form-control"
                             id="exampleInputEmail1"
-                            placeholder="Ingresa tu Email "
+                            placeholder="Ingresa tu Email"
                             required
                         />
                     </div>
@@ -85,6 +85,9 @@ const Login = () => {
                     </button>
                 </form>
             </div>
+
+
+
         </Layout>
     );
 };

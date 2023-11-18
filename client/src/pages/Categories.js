@@ -5,7 +5,7 @@ import Layout from "../components/Layout/Layout";
 const Categories = () => {
     const categories = useCategory();
     return (
-        <Layout title={"All Categories"}>
+        <Layout title={"Todas las categorias-venta de garage"}>
             <div className="container">
                 <div className="row">
                     {categories.map((c) => (

@@ -41,9 +41,9 @@ const Register = () => {
 
   return (
     <Layout title="Register - Ecommerce App">
-      <div className="register">
+      <div className="register ">
         <form onSubmit={handleSubmit}>
-          <h1> ¡Registrate!</h1>
+          <h3 className="text-center  ">Regístrate</h3>
           <div className="mb-3">
             <input
               type="text"
@@ -108,18 +108,21 @@ const Register = () => {
               placeholder="nombre de tu mejor amigo"
             />
           </div>
-          <button
-            type="button"
-            className="btn btn-primary"
-            onClick={() => {
-              navigate("/forgot-password");
-            }}
-          >
-            Recuperar contraseña
-          </button>
-          <button type="submit" className="btn btn-primary">
-            Registrarse
-          </button>
+
+          <div className="mb-3 d-flex justify-content-between">
+            <button
+              type="button"
+              className="btn btn-secondary me-2"
+              onClick={() => {
+                navigate("/forgot-password");
+              }}
+            >
+              Recuperar contraseña
+            </button>
+            <button type="submit" className="btn btn-primary">
+              Registrarse
+            </button>
+          </div>
         </form>
       </div>
     </Layout>

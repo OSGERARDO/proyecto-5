@@ -105,7 +105,7 @@ const HomePage = () => {
     }
   };
   return (
-    <Layout title={"ALl Products - Best offers "}>
+    <Layout title={"¡Todos los productos - venta de garage! "}>
       <div className="container-fluid row mt-3">
         <div className="col-md-2">
           <h4 className="text-center">Filtrar por categoria</h4>
