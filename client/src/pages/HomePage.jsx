@@ -6,6 +6,7 @@ import { Prices } from "../components/Prices";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/cart";
 import toast from "react-hot-toast";
+import Carrusel from "../components/Layout/Carrusel";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -107,6 +108,7 @@ const HomePage = () => {
   return (
     <Layout title={"¡Todos los productos - venta de garage! "}>
       <div className="container-fluid row mt-3">
+        <Carrusel />
         <div className="col-md-2">
           <h4 className="text-center">Filtrar por categoria</h4>
           <div className="d-flex flex-column">
@@ -141,6 +143,7 @@ const HomePage = () => {
         </div>
         <div className="col-md-9">
           <h1 className="text-center">Todos los Productos</h1>
+
           <div className="d-flex flex-wrap">
             {products?.map((p) => (
               <div className="card m-2" style={{ width: "18rem" }}>

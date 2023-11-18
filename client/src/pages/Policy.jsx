@@ -9,7 +9,7 @@ const Policy = () => {
           <img
             src="/images/Politicas.png"
             alt="policy"
-            style={{ width: "80%" }}
+            style={{ width: "100%" }}
           />
         </div>
         <div className="col-md-4">

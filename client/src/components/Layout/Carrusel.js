@@ -6,13 +6,13 @@ const Carrusel = () => {
             <div id="carouselExampleAutoplaying" className="carousel slide my-custom-carousel" data-bs-ride="carousel" style={{ minHeight: '300px', padding: '20px' }}>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="/images/image1.jpg" className="d-block w-100 img-fluid" alt="uno" />
+                        <img src="/images/image1.png" className="d-block w-100 img-fluid" alt="uno" />
                     </div>
                     <div className="carousel-item">
-                        <img src="/images/dos.jpg" className="d-block w-100 img-fluid" alt="dos" />
+                        <img src="/images/image2.png" className="d-block w-100 img-fluid" alt="dos" />
                     </div>
                     <div className="carousel-item">
-                        <img src="/images/tres.jpg" className="d-block w-100 img-fluid" alt="tres" />
+                        <img src="/images/image3.png" className="d-block w-100 img-fluid" alt="tres" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
