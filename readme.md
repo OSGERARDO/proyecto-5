@@ -1,8 +1,11 @@
 # Ecommerce App -VENTA DE GARAGE - React Fullstack
 
-![VENTA DE GARAGE Ecommerce]
+[VENTA DE GARAGE Ecommerce]
 
 Una aplicación ecommerce fullstack construida con la pila MERN (MongoDB, Express, React, Node.js). Esta aplicación permite la venta de productos en línea, integra PayPal Sandbox para la simulación de pagos y proporciona autenticación de usuarios utilizando JSON Web Tokens (JWT).
+//credenciales:
+//usuario:admin
+//password:admin123
 
 ## Características
 
@@ -26,6 +29,7 @@ Una aplicación ecommerce fullstack construida con la pila MERN (MongoDB, Expres
 ### Base de Datos
 
 - **MongoDB**: Almacenamiento de información de productos y datos de usuario.
+  Mongo Atlas
 
 ## Implementación
 
@@ -33,20 +37,45 @@ Una aplicación ecommerce fullstack construida con la pila MERN (MongoDB, Expres
 
 ### Backend
 
-"dependencies": {
-"bcrypt": "^5.1.1",
-"braintree": "^3.19.0",
-"colors": "^1.4.0",
-"concurrently": "^8.2.2",
-"cors": "^2.8.5",
-"dotenv": "^16.3.1",
-"express": "^4.18.2",
-"express-formidable": "^1.2.0",
-"jsonwebtoken": "^9.0.2",
-"moment": "^2.29.4",
-"mongoose": "^8.0.0",
-"morgan": "^1.10.0",
-"nodemon": "^3.0.1"
+dependencies: {
+bcrypt:
+braintree"
+colors:
+concurrently:
+cors:
+dotenv:
+express:
+express-formidable:
+jsonwebtoken:
+moment:
+mongoose:
+morgan:
+nodemon:
 }
 
 Siéntete libre de contribuir, informar problemas o sugerir mejoras. ¡Feliz codificación! 🚀
+
+A fullstack ecommerce application built with MERN stack
+(MongoDB, Express, React, Node.js). This app enables online product sales, integrates PayPal Sandbox for payment simulation, and incorporates user authentication using JSON Web Tokens (JWT).
+
+Features
+Catalog of Products: Explore a wide range of products in the catalog.
+Shopping Cart: Add products to the cart for a seamless shopping experience.
+Payment Gateway: Use PayPal or MercadoPago for secure and simulated online payments.
+Authentication: Register and log in securely using JWT.
+Authorization: Access a private zone to view and manage your profile.
+Technologies Used
+Frontend
+ReactJS: Building the user interface.
+Context API: State management within the application.
+Backend
+Node.js with ExpressJS: Server-side logic and API creation.
+Database
+MongoDB: Storing product information and user data.
+Project Structure
+Frontend
+src/
+components/: Reusable React components.
+contexts/: Context providers for state management.
+pages/: Different pages for routing.
+services/: Services for handling API requests.
