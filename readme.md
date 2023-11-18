@@ -2,10 +2,14 @@
 
 [VENTA DE GARAGE Ecommerce]
 
-Una aplicación ecommerce fullstack construida con la pila MERN (MongoDB, Express, React, Node.js). Esta aplicación permite la venta de productos en línea, integra PayPal Sandbox para la simulación de pagos y proporciona autenticación de usuarios utilizando JSON Web Tokens (JWT).
-//credenciales:
-//usuario:admin
-//password:admin123
+## Una aplicación ecommerce fullstack construida con la pila MERN (MongoDB, Express, React, Node.js). Esta aplicación permite la venta de productos en línea, integra PayPal Sandbox para la simulación de pagos y proporciona autenticación de usuarios utilizando JSON Web Tokens (JWT).
+
+## Inicie sesión para acceder a las funcionalidades de Administrador:
+
+- **correo :administrador@udd.cl**
+- **contraseña:admin123**
+-
+-
 
 ## Características
 
