@@ -11,7 +11,9 @@
 
 - **correo:administrador@udd.cl**
 - **contraseña:admin123**
-- -![Texto alternativo](./client/public/images/capture01.png)
+- ![Vista animada](./client/public/images/capture01.png)
+
+- -![Capture](./client/public/images/capture01.png)
 
 ##Regitrese e inicie sesión como usuario nuevo
 
