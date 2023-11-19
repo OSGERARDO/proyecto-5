@@ -11,7 +11,7 @@
 
 - **correo:administrador@udd.cl**
 - **contraseña:admin123**
-- ![Vista animada](./client/public/images/capture01.png)
+- ![Vista animada](./client/public/images/Animation.gif)
 
 - -![Capture](./client/public/images/capture01.png)
 
