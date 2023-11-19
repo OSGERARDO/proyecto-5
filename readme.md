@@ -1,15 +1,27 @@
 # Ecommerce App -VENTA DE GARAGE - React Fullstack
 
-[VENTA DE GARAGE Ecommerce]
+#VENTA DE GARAGE ECOMMERCE
 
-## Una aplicación ecommerce fullstack construida con la pila MERN (MongoDB, Express, React, Node.js). Esta aplicación permite la venta de productos en línea, integra PayPal Sandbox para la simulación de pagos y proporciona autenticación de usuarios utilizando JSON Web Tokens (JWT).
+\*Una aplicación ecommerce fullstack construida con la pila MERN (MongoDB, Express, React, Node.js). Esta aplicación permite la venta de productos en línea, integra PayPal Sandbox para la simulación de pagos y proporciona autenticación de usuarios utilizando JSON Web Tokens (JWT).\*
+
+##Acceso a la app
+[Click aqui](https://dizzy-eel-pantyhose.cyclic.app/)
 
 ## Inicie sesión para acceder a las funcionalidades de Administrador:
 
-- **correo :administrador@udd.cl**
+- **correo:administrador@udd.cl**
 - **contraseña:admin123**
 -
 -
+
+##Regitrese e inicie sesión como usuario nuevo
+
+##Agregar productos al carrito
+
+-#MIS COMPRAS(carrito de compra)
+-podra ver la integracion de paypal
+-o pago ingresando tarjeta de credito/debito
+-o eliminar ariticulos
 
 ## Características
 
@@ -37,49 +49,53 @@
 
 ## Implementación
 
+https://app.cyclic.sh/
+
 ## Dependencias
 
-### Backend
+-dependencies:
+-bcrypt
+-braintree
+-colors
+-concurrently
+-cors
+-dotenv
+-express
+-express-formidable
+-jsonwebtoken
+-moment
+-mongoose
+-morgan
+-nodemon
 
-dependencies: {
-bcrypt:
-braintree"
-colors:
-concurrently:
-cors:
-dotenv:
-express:
-express-formidable:
-jsonwebtoken:
-moment:
-mongoose:
-morgan:
-nodemon:
-}
+\*\*Imagenes procesadas con:
+-ADOBE PHOSHOP CS6
+-Carussel banner,product images.
 
-Siéntete libre de contribuir, informar problemas o sugerir mejoras. ¡Feliz codificación! 🚀
+- -Siéntete libre de contribuir, informar problemas o sugerir mejoras. ¡Feliz -codificación! 🚀
 
-A fullstack ecommerce application built with MERN stack
-(MongoDB, Express, React, Node.js). This app enables online product sales, integrates PayPal Sandbox for payment simulation, and incorporates user authentication using JSON Web Tokens (JWT).
+  -A fullstack ecommerce application built with MERN stack
+  -(MongoDB, Express, React, Node.js). This app enables online product sales, -integrates PayPal Sandbox for payment simulation, and incorporates user -authentication using JSON Web Tokens (JWT).
 
-Features
-Catalog of Products: Explore a wide range of products in the catalog.
-Shopping Cart: Add products to the cart for a seamless shopping experience.
-Payment Gateway: Use PayPal or MercadoPago for secure and simulated online payments.
-Authentication: Register and log in securely using JWT.
-Authorization: Access a private zone to view and manage your profile.
-Technologies Used
-Frontend
-ReactJS: Building the user interface.
-Context API: State management within the application.
-Backend
-Node.js with ExpressJS: Server-side logic and API creation.
-Database
-MongoDB: Storing product information and user data.
-Project Structure
-Frontend
-src/
-components/: Reusable React components.
-contexts/: Context providers for state management.
-pages/: Different pages for routing.
-services/: Services for handling API requests.
+  -Features
+  -Catalog of Products: Explore a wide range of products in the catalog.
+  -Shopping Cart: Add products to the cart for a seamless shopping experience.
+  -Payment Gateway: Use PayPal or MercadoPago for secure and simulated online payments.
+  -Authentication: Register and log in securely using JWT.
+  -Authorization: Access a private zone to view and manage your profile.
+  -Technologies Used
+  -Frontend
+  -ReactJS: Building the user interface.
+  -Context API: State management within the application.
+  -Backend
+  -Node.js with ExpressJS: Server-side logic and API creation.
+  -Database
+  -MongoDB: Storing product information and user data.
+  -Project Structure
+  -Frontend
+  -src/
+  -components/: Reusable React components.
+  -contexts/: Context providers for state management.
+  -pages/: Different pages for routing.
+  -services/: Services for handling API requests.
+  !THANKS!
